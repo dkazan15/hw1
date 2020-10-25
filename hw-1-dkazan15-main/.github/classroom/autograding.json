@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test #1 (positive) ",
+      "setup": "javac *.java",
+      "run": "java -cp . HW1",
+      "input": "3 4\r\n7 10\r\n19 2\r\n15 3\r\n1 800\r\n5 5\r\n7 17\r\n9999 0\r\n500 2\r\n9 9",
+      "output": "12\r\n70\r\n38\r\n45\r\n800\r\n25\r\n119\r\n0\r\n1000\r\n81",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Test #2 (negative)",
+      "setup": "javac *.java",
+      "run": "java -cp . HW1",
+      "input": "3 -4\r\n-7 -10\r\n0 0\r\n19 -2\r\n-15 3\r\n-1 -800\r\n5 -5\r\n-7 -17\r\n-9999 0\r\n500 -2",
+      "output": "-12\r\n70\r\n0\r\n-38\r\n-45\r\n800\r\n-25\r\n119\r\n0\r\n-1000",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    }
+  ]
+}
